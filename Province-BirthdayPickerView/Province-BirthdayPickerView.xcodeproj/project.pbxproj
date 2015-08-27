@@ -14,6 +14,8 @@
 		4BD6A9EE1B8EDEA200404DD6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BD6A9ED1B8EDEA200404DD6 /* Images.xcassets */; };
 		4BD6A9F11B8EDEA200404DD6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BD6A9EF1B8EDEA200404DD6 /* LaunchScreen.xib */; };
 		4BD6A9FD1B8EDEA200404DD6 /* Province_BirthdayPickerViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BD6A9FC1B8EDEA200404DD6 /* Province_BirthdayPickerViewTests.m */; };
+		4BD6AA081B8EE5A000404DD6 /* Province.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BD6AA071B8EE5A000404DD6 /* Province.m */; };
+		4BD6AA0A1B8EE63300404DD6 /* provinces.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4BD6AA091B8EE63300404DD6 /* provinces.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,9 @@
 		4BD6A9F61B8EDEA200404DD6 /* Province-BirthdayPickerViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Province-BirthdayPickerViewTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BD6A9FB1B8EDEA200404DD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4BD6A9FC1B8EDEA200404DD6 /* Province_BirthdayPickerViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Province_BirthdayPickerViewTests.m; sourceTree = "<group>"; };
+		4BD6AA061B8EE5A000404DD6 /* Province.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Province.h; sourceTree = "<group>"; };
+		4BD6AA071B8EE5A000404DD6 /* Province.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Province.m; sourceTree = "<group>"; };
+		4BD6AA091B8EE63300404DD6 /* provinces.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = provinces.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +90,8 @@
 				4BD6A9E51B8EDEA200404DD6 /* AppDelegate.m */,
 				4BD6A9E71B8EDEA200404DD6 /* ViewController.h */,
 				4BD6A9E81B8EDEA200404DD6 /* ViewController.m */,
+				4BD6AA061B8EE5A000404DD6 /* Province.h */,
+				4BD6AA071B8EE5A000404DD6 /* Province.m */,
 				4BD6A9EA1B8EDEA200404DD6 /* Main.storyboard */,
 				4BD6A9ED1B8EDEA200404DD6 /* Images.xcassets */,
 				4BD6A9EF1B8EDEA200404DD6 /* LaunchScreen.xib */,
@@ -96,6 +103,7 @@
 		4BD6A9E01B8EDEA200404DD6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4BD6AA091B8EE63300404DD6 /* provinces.plist */,
 				4BD6A9E11B8EDEA200404DD6 /* Info.plist */,
 				4BD6A9E21B8EDEA200404DD6 /* main.m */,
 			);
@@ -201,6 +209,7 @@
 			files = (
 				4BD6A9EC1B8EDEA200404DD6 /* Main.storyboard in Resources */,
 				4BD6A9F11B8EDEA200404DD6 /* LaunchScreen.xib in Resources */,
+				4BD6AA0A1B8EE63300404DD6 /* provinces.plist in Resources */,
 				4BD6A9EE1B8EDEA200404DD6 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -222,6 +231,7 @@
 				4BD6A9E91B8EDEA200404DD6 /* ViewController.m in Sources */,
 				4BD6A9E61B8EDEA200404DD6 /* AppDelegate.m in Sources */,
 				4BD6A9E31B8EDEA200404DD6 /* main.m in Sources */,
+				4BD6AA081B8EE5A000404DD6 /* Province.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

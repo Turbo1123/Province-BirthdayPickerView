@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,11 +15,62 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="生日" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H0v-9f-QtS">
+                                <rect key="frame" x="80" y="120" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="42" id="5yn-SA-yKR"/>
+                                    <constraint firstAttribute="height" constant="21" id="UUB-M4-nXM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="城市" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z68-jD-LvR">
+                                <rect key="frame" x="80" y="166" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MOS-l9-Gs6">
+                                <rect key="frame" x="142" y="116" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="4jk-dp-9dn"/>
+                                    <constraint firstAttribute="height" constant="30" id="Dy0-lp-HZt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xpj-dZ-gg5">
+                                <rect key="frame" x="142" y="157" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="MOS-l9-Gs6" firstAttribute="centerY" secondItem="H0v-9f-QtS" secondAttribute="centerY" id="4om-SO-oao"/>
+                            <constraint firstItem="MOS-l9-Gs6" firstAttribute="height" secondItem="Xpj-dZ-gg5" secondAttribute="height" id="5T3-Jb-n1E"/>
+                            <constraint firstItem="MOS-l9-Gs6" firstAttribute="centerX" secondItem="Xpj-dZ-gg5" secondAttribute="centerX" id="A1u-9V-uNB"/>
+                            <constraint firstItem="H0v-9f-QtS" firstAttribute="leading" secondItem="Z68-jD-LvR" secondAttribute="leading" id="EDf-s5-aBQ"/>
+                            <constraint firstItem="MOS-l9-Gs6" firstAttribute="leading" secondItem="H0v-9f-QtS" secondAttribute="trailing" constant="20" id="KLu-RR-bor"/>
+                            <constraint firstItem="Z68-jD-LvR" firstAttribute="bottom" secondItem="Xpj-dZ-gg5" secondAttribute="bottom" id="KeO-g8-zfH"/>
+                            <constraint firstItem="H0v-9f-QtS" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="100" id="QFk-HN-ChG"/>
+                            <constraint firstItem="MOS-l9-Gs6" firstAttribute="width" secondItem="Xpj-dZ-gg5" secondAttribute="width" id="dbx-84-Qdg"/>
+                            <constraint firstItem="H0v-9f-QtS" firstAttribute="width" secondItem="Z68-jD-LvR" secondAttribute="width" id="k8p-s5-ze6"/>
+                            <constraint firstItem="H0v-9f-QtS" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="80" id="lTv-RW-KuV"/>
+                            <constraint firstItem="Z68-jD-LvR" firstAttribute="top" secondItem="H0v-9f-QtS" secondAttribute="bottom" constant="25" id="neT-Hd-FLI"/>
+                            <constraint firstItem="H0v-9f-QtS" firstAttribute="height" secondItem="Z68-jD-LvR" secondAttribute="height" id="uTG-Yi-kcj"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="birthdayTextField" destination="MOS-l9-Gs6" id="w3o-jq-5U9"/>
+                        <outlet property="cityTextField" destination="Xpj-dZ-gg5" id="P9h-1x-I9z"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="354" y="443"/>
         </scene>
     </scenes>
 </document>
